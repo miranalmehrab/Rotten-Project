@@ -18,11 +18,11 @@ def insecure_yaml_operation():
 
 
 def use_of_insecure_cipher():
-    hashed_password = hashlib.md5(password.encode())
+    hashed_password = hashlib.md5(password)
 
 def user_sql_statement():
     product_id = input()
-    query = f"delete from products where id = {product_id}"
+    query = "delete from products where id = "+product_id
 
 
 def send_data_as_safe_marked():
